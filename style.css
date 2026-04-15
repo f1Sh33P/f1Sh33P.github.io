@@ -1,0 +1,72 @@
+/* -- Variables -- */
+:root {
+  --transition-duration: 0.3s;
+}
+
+[data-theme="light"] {
+  --bg-color: #e3e3e3;
+  --color: #3c3c3c;
+  --select-bg-color: #3c3c3c33;
+  --font-weight: 400;
+}
+
+[data-theme="dark"] {
+  --bg-color: #3c3c3c;
+  --color: #e3e3e3;
+  --select-bg-color: #e3e3e333;
+  --font-weight: 350;
+}
+
+/* -- Base styles -- */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font: var(--font-weight) 18px / 1.6 "Noto Sans SC";
+  background-color: var(--bg-color);
+  color: var(--color);
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+/* -- Article styles -- */
+article {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h3 {
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 32px 0 10px 0;
+}
+
+p {
+  margin-bottom: 6px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+/* -- Miscellaneous -- */
+::selection {
+  background-color: var(--select-bg-color);
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
