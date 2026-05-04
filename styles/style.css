@@ -38,6 +38,10 @@
   --font-weight-bold: 650;
 }
 
+::selection {
+  background-color: var(--highlight);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -57,15 +61,11 @@ body {
   /* Add tail to lower `l` */
   font-feature-settings: 'cv05';
   font-weight: var(--font-weight);
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 25.33px;
   max-width: 740px;
   margin: 0 auto;
   padding: 0 20px 32vh;
-}
-
-::selection {
-  background-color: var(--highlight);
 }
 
 h2,
@@ -82,7 +82,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.17em;
+  font-size: 1.2em;
   line-height: 1.4;
   margin: 38px 0 10px;
 }
@@ -125,4 +125,11 @@ blockquote {
   margin: 16px 0;
   padding-left: 16px;
   border-left: 4px solid var(--gray);
+}
+
+@media screen and (width >= 740px) {
+  body {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
