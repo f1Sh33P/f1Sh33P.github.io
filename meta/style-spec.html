@@ -1,74 +1,134 @@
-<h2>样式规范</h2>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-<h3>颜色</h3>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>样式规范</title>
+  <link rel="stylesheet" href="/styles/style.css">
 
-采用深色主题。
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
 
-背景：#3c3c3c
-文字：#e3e3e3
-高亮：#ffffff22
-黑色：#202020
-灰色：#757575
-黄色：#e8c37d
-蓝色：#70dae6
-紫色：#dc91f2
+<body>
+  <h2>样式规范</h2>
 
-<h3>文本</h3>
+  <h3>颜色</h3>
 
-文档语言设置为 zh-CN。
+  <p>采用深色主题。</p>
 
-font-family：西文使用 Inter 可变字体，来自 Rasmus Andersson。中文使用 Noto Sans SC 可变字体，来自 Google Fonts。调整小写 l、省略号及间隔号的样式。
+  <ul>
+    <li>背景：#3c3c3c</li>
+    <li>文字：#e3e3e3</li>
+    <li>高亮：#ffffff22</li>
+    <li>黑色：#202020</li>
+    <li>灰色：#757575</li>
+    <li>黄色：#e8c37d</li>
+    <li>蓝色：#70dae6</li>
+    <li>紫色：#dc91f2</li>
+  </ul>
 
-font-weight：普通文本设置为 350，粗体文本设置为 650。
+  <h3>文本</h3>
 
-font-size 和 line-height：以 18px / 28px 为基准。&lt;h2&gt; 设置为 1.6em / 1.3，&lt;h3&gt; 设置为 1.17em / 1.4。
+  <p>文档语言设置为 zh-CN。</p>
 
-margin：以 8px 0 为基准。&lt;h2&gt; 设置为 2em 0，&lt;h3&gt; 设置为 38px 0 10px。
+  <ul>
+    <li>
+      <p>font-family：西文使用 Inter 可变字体，来自 Rasmus Andersson。中文使用 Noto Sans SC 可变字体，来自 Google Fonts。调整小写 l、省略号及间隔号的样式。</p>
+    </li>
+    <li>
+      <p>font-weight：普通文本设置为 350，粗体文本设置为 650。</p>
+    </li>
+    <li>
+      <p>font-size 和 line-height：以 18px / 28px 为基准。&lt;h2&gt; 设置为 1.6em / 1.3，&lt;h3&gt; 设置为 1.17em / 1.4。</p>
+    </li>
+    <li>
+      <p>margin：以 8px 0 为基准，&lt;h4&gt; 与 &lt;p&gt; 相同。&lt;h2&gt; 设置为 2em 0，&lt;h3&gt; 设置为 38px 0 10px。</p>
+    </li>
+  </ul>
 
-<h4>列表</h4>
+  <h4>列表</h4>
 
-padding-left：设置为 20px。
+  <ul>
+    <li>
+      <p>padding-left：设置为 20px。</p>
+    </li>
+  </ul>
 
-<h4>链接</h4>
 
-color：以蓝色为基准。a:visited 设置为紫色。
+  <h4>链接</h4>
 
-<h4>代码</h4>
+  <ul>
+    <li>
+      <p>color：以蓝色为基准。a:visited 设置为紫色。</p>
+    </li>
+  </ul>
 
-background-color：代码块设置为黑色。
+  <h4>代码</h4>
 
-color：设置为黄色。
+  <ul>
+    <li>
+      <p>background-color：代码块设置为黑色。</p>
+    </li>
+    <li>
+      <p>color：设置为黄色。</p>
+    </li>
+    <li>
+      <p>font-family：使用 Noto Sans Mono 可变字体，来自 Google Fonts。</p>
+    </li>
+    <li>
+      <p>font-size：设置为 16px。</p>
+    </li>
+    <li>
+      <p>margin：代码块设置为 16px 0。</p>
+    </li>
+    <li>
+      <p>padding：代码块设置为 16px 20px。</p>
+    </li>
+    <li>
+      <p>border-radius：代码块设置为 8px。</p>
+    </li>
+    <li>
+      <p>overflow-x：代码块设置为 auto。</p>
+    </li>
+  </ul>
 
-font-family：使用 Noto Sans Mono 可变字体，来自 Google Fonts。
+  <h4>引用</h4>
 
-font-size：设置为 16px。
+  <ul>
+    <li>
+      <p>margin：设置为 16px 0。</p>
+    </li>
+    <li>
+      <p>padding-left：设置为 16px。</p>
+    </li>
+    <li>
+      <p>border-left：设置为 4px 灰色实线。</p>
+    </li>
+  </ul>
 
-margin：代码块设置为 16px 0。
+  <h3>图片</h3>
 
-padding：代码块设置为 16px 20px。
+  <h3>表格</h3>
 
-border-radius：代码块设置为 8px。
+  <h3>布局</h3>
 
-overflow-x：代码块设置为 auto。
+  <p>使用 border-box 进行布局。</p>
 
-<h4>引用</h4>
+  <ul>
+    <li>
+      <p>max-width：设置为 740px。</p>
+    </li>
+    <li>
+      <p>margin: 设置为 0 auto。</p>
+    </li>
+    <li>
+      <p>padding：设置为 0 20px 32vh。</p>
+    </li>
+  </ul>
+</body>
 
-margin：设置为 16px 0。
-
-padding-left：设置为 16px。
-
-border-left：设置为 4px 灰色实线。
-
-<h3>图片</h3>
-
-<h3>表格</h3>
-
-<h3>布局</h3>
-
-使用 border-box 进行布局。
-
-max-width：设置为 740px。
-
-margin: 设置为 0 auto。
-
-padding：设置为 0 20px 32vh。
+</html>
