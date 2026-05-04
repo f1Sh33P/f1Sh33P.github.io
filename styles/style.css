@@ -26,14 +26,14 @@
 }
 
 :root {
-  --bg-color: #3c3c3c;
-  --color: #e3e3e3;
-  --select-bg-color: #ffffff22;
-  --pre-bg-color: #202020;
-  --code-color: #e8c37d;
-  --a-color: #70dae6;
-  --a-visited-color: #dc91f2;
-  --bd-color: #757575;
+  --background: #3c3c3c;
+  --text: #e3e3e3;
+  --highlight: #ffffff22;
+  --black: #202020;
+  --gray: #757575;
+  --yellow: #e8c37d;
+  --blue: #70dae6;
+  --magenta: #dc91f2;
   --font-weight: 350;
   --font-weight-bold: 650;
 }
@@ -51,8 +51,8 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--color);
+  background-color: var(--background);
+  color: var(--text);
   font-family: 'Noto Sans SC Punctuation', InterVariable, 'Noto Sans SC';
   /* Add tail to lower `l` */
   font-feature-settings: 'cv05';
@@ -65,7 +65,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--select-bg-color);
+  background-color: var(--highlight);
 }
 
 h2,
@@ -97,18 +97,31 @@ ul {
   padding-left: 20px;
 }
 
-code {
-  color: var(--code-color);
+a {
+  color: var(--blue);
+}
+
+a:visited {
+  color: var(--magenta);
+}
+
+code,
+pre {
+  color: var(--yellow);
   font-family: 'Noto Sans Mono';
   font-size: 16px;
 }
 
 pre {
-  background-color: var(--pre-bg-color);
-  color: var(--code-color);
-  font-family: 'Noto Sans Mono';
-  font-size: 16px;
+  background-color: var(--black);
+  margin: 16px 0;
   padding: 16px 20px;
   border-radius: 8px;
   overflow-x: auto;
+}
+
+blockquote {
+  margin: 16px 0;
+  padding-left: 16px;
+  border-left: 4px solid var(--gray);
 }
