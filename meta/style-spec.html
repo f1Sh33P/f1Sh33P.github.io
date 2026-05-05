@@ -16,6 +16,22 @@
 <body>
   <h2>样式规范</h2>
 
+  <h3>布局</h3>
+
+  <p>清除默认边距，使用 border-box 进行布局。</p>
+
+  <ul>
+    <li>
+      <p><code>max-width</code>：设置为 740px。</p>
+    </li>
+    <li>
+      <p><code>margin</code>：设置为 0 auto。</p>
+    </li>
+    <li>
+      <p><code>padding</code>：设置为 0 20px 32vh。</p>
+    </li>
+  </ul>
+
   <h3>颜色</h3>
 
   <p>采用深色主题。</p>
@@ -31,104 +47,51 @@
     <li>紫色：<code>#dc91f2</code></li>
   </ul>
 
-  <h3>文本</h3>
+  <p>一般情况下，选中文本背景使用高亮，代码块背景使用黑色，边框使用灰色，代码使用黄色，链接使用蓝色，访问过的链接使用紫色。</p>
 
-  <p>文档语言设置为 zh-CN。</p>
-
-  <ul>
-    <li>
-      <p><code>font-family</code>：西文使用 Inter 可变字体，来自 Rasmus Andersson。中文使用 Noto Sans SC 可变字体，来自 Google Fonts。调整小写 l、省略号及间隔号的样式。</p>
-    </li>
-    <li>
-      <p><code>font-weight</code>：普通文本设置为 350，粗体文本设置为 650。</p>
-    </li>
-    <li>
-      <p><code>font-size</code> 和 <code>line-height</code>：以 16px / 26px 为基准，&lt;h2&gt; 设置为 1.6em / 1.3，&lt;h3&gt; 设置为 1.2em / 1.4。电脑端以 18px / 28px 为基准。</p>
-    </li>
-    <li>
-      <p><code>margin</code>：以 6px 0 为基准，&lt;h2&gt; 设置为 2.2em 0，&lt;h3&gt; 设置为 36px 0 8px，&lt;h4&gt; 与 &lt;p&gt; 相同。电脑端以 8px 0 为基准，&lt;h3&gt; 设置为 38px 0 10px。</p>
-    </li>
-  </ul>
-
-  <h4>列表</h4>
+  <h3>字体</h3>
 
   <ul>
     <li>
-      <p><code>padding-left</code>：设置为 20px。</p>
+      <p><code>font-family</code>：正文使用 Inter 和 Noto Sans SC，调整小写 l、省略号及间隔号的样式；代码使用 Noto Sans Mono。均为可变字体。</p>
+    </li>
+    <li>
+      <p><code>font-weight</code>：常规文本设置为 350，粗体设置为 650。</p>
+    </li>
+    <li>
+      <p><code>font-size</code>：以 16px 为基准，代码和表格设置为 15px，二级标题 1.6em，三级标题 1.2em，四级标题 1em。电脑端，以 18px 为基准，代码和表格设置为 16px。</p>
+    </li>
+    <li>
+      <p><code>line-height</code>：以 26px 为基准，二级标题 1.3，三级标题 1.4。电脑端，以 28px 为基准。</p>
     </li>
   </ul>
 
-
-  <h4>链接</h4>
+  <h3>边距</h3>
 
   <ul>
     <li>
-      <p><code>color</code>：以蓝色为基准。a:visited 设置为紫色。</p>
+      <p><code>margin</code>：以 6px 0 为基准，二级标题 2.2em 0，三级标题 36px 0 8px，四级标题、列表、代码块和表格与正文相同。电脑端，以 8px 0 为基准，三级标题设置为 38px 0 10px。</p>
+    </li>
+    <li>
+      <p><code>padding</code>：页面设置为 0 20px 32vh，列表 0 0 0 20px，代码块 16px 20px，引用块 0 0 0 16px，表格数据 2.5px 8px。</p>
     </li>
   </ul>
 
-  <h4>代码</h4>
+  <h3>边框</h3>
 
-  <ul>
-    <li>
-      <p><code>background-color</code>：代码块设置为黑色。</p>
-    </li>
-    <li>
-      <p><code>color</code>：设置为黄色。</p>
-    </li>
-    <li>
-      <p><code>font-family</code>：使用 Noto Sans Mono 可变字体，来自 Google Fonts。</p>
-    </li>
-    <li>
-      <p><code>font-size</code>：设置为 15px。电脑端设置为 16px。</p>
-    </li>
-    <li>
-      <p><code>margin</code>：代码块设置为 16px 0。</p>
-    </li>
-    <li>
-      <p><code>padding</code>：代码块设置为 16px 20px。</p>
-    </li>
-    <li>
-      <p><code>border-radius</code>：代码块设置为 8px。</p>
-    </li>
-    <li>
-      <p><code>overflow-x</code>：代码块设置为 auto。</p>
-    </li>
-  </ul>
 
-  <h4>引用</h4>
+  <p><code>border-radius</code>：代码块设置为 8px。</p>
+  <p><code>border-left</code>：设置为 4px 灰色实线。</p>
 
-  <ul>
-    <li>
-      <p><code>margin</code>：设置为 16px 0。</p>
-    </li>
-    <li>
-      <p><code>padding-left</code>：设置为 16px。</p>
-    </li>
-    <li>
-      <p><code>border-left</code>：设置为 4px 灰色实线。</p>
-    </li>
-  </ul>
+
+  <h3>溢出</h3>
+
+  <p><code>overflow-x</code>：代码块设置为 auto。</p>
+
 
   <h3>图片</h3>
 
   <h3>表格</h3>
-
-  <h3>布局</h3>
-
-  <p>使用 border-box 进行布局。</p>
-
-  <ul>
-    <li>
-      <p><code>max-width</code>：设置为 740px。</p>
-    </li>
-    <li>
-      <p><code>margin</code>：设置为 0 auto。</p>
-    </li>
-    <li>
-      <p><code>padding</code>：设置为 0 20px 32vh。</p>
-    </li>
-  </ul>
 </body>
 
 </html>
