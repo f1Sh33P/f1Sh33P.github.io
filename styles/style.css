@@ -46,9 +46,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -62,39 +60,33 @@ body {
   font-feature-settings: 'cv05';
   font-weight: var(--font-weight);
   font-size: 16px;
-  line-height: 25.33px;
+  line-height: 26px;
   max-width: 740px;
   margin: 0 auto;
   padding: 0 20px 32vh;
 }
 
-h2,
-h3,
-strong,
-th {
+h2, h3, strong, th {
   font-weight: var(--font-weight-bold);
 }
 
 h2 {
   font-size: 1.6em;
   line-height: 1.3;
-  margin: 2em 0;
+  margin: 2.2em 0;
 }
 
 h3 {
   font-size: 1.2em;
   line-height: 1.4;
-  margin: 38px 0 10px;
+  margin: 36px 0 8px;
 }
 
-h4,
-p,
-li {
-  margin: 8px 0;
+h4, p, li {
+  margin: 6px 0;
 }
 
-ol,
-ul {
+ol, ul {
   padding-left: 20px;
 }
 
@@ -106,11 +98,10 @@ a:visited {
   color: var(--magenta);
 }
 
-code,
-pre {
+code, pre {
   color: var(--yellow);
   font-family: 'Noto Sans Mono';
-  font-size: 16px;
+  font-size: 15px;
 }
 
 pre {
@@ -131,5 +122,17 @@ blockquote {
   body {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  h3 {
+    margin: 38px 0 10px;
+  }
+
+  h4, p, li {
+    margin: 8px 0;
+  }
+
+  code, pre {
+    font-size: 16px;
   }
 }
